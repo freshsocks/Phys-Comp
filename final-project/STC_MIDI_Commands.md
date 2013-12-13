@@ -13,26 +13,30 @@ MIDI Commands I'm Using
 #### Track Control
 
 * __Select Track #__
+	
 	MIDI CC 8 (#)
+
 ```
-	MIDI.sendControlChange(8, 0, 1); // Select Track 1
-	MIDI.sendControlChange(8, 1, 1); // Select Track 2
-	MIDI.sendControlChange(8, 2, 1); // Select Track 3
-	MIDI.sendControlChange(8, 3, 1); // Select Track 4
-	MIDI.sendControlChange(8, 4, 1); // Select Track 5
-	MIDI.sendControlChange(8, 5, 1); // Select Track 6
-	MIDI.sendControlChange(8, 6, 1); // Select Track 7
-	MIDI.sendControlChange(8, 7, 1); // Select Track 8
-	MIDI.sendControlChange(8, 8, 1); // Select Track 9
-	MIDI.sendControlChange(8, 9, 1); // Select Track 10
-	MIDI.sendControlChange(8, 10, 1); // Select Track 11
-	MIDI.sendControlChange(8, 11, 1); // Select Track 12
+    MIDI.sendControlChange(8, 0, 1); // Select Track 1
+    MIDI.sendControlChange(8, 1, 1); // Select Track 2
+    MIDI.sendControlChange(8, 2, 1); // Select Track 3
+    MIDI.sendControlChange(8, 3, 1); // Select Track 4
+    MIDI.sendControlChange(8, 4, 1); // Select Track 5
+    MIDI.sendControlChange(8, 5, 1); // Select Track 6
+    MIDI.sendControlChange(8, 6, 1); // Select Track 7
+    MIDI.sendControlChange(8, 7, 1); // Select Track 8
+    MIDI.sendControlChange(8, 8, 1); // Select Track 9
+    MIDI.sendControlChange(8, 9, 1); // Select Track 10
+    MIDI.sendControlChange(8, 10, 1); // Select Track 11
+    MIDI.sendControlChange(8, 11, 1); // Select Track 12
 ```   
 * __Select Prev Track__
+	
 	MIDI Note 84 (C5)
+
 ```
-	MIDI.sendNoteOn(85,127,1);  // Send a Previous Track Message
-	MIDI.sendNoteOff(85,0,1);   // Stop Message
+    MIDI.sendNoteOn(85,127,1);  // Send a Previous Track Message
+    MIDI.sendNoteOff(85,0,1);   // Stop Message
 ```   
 * __Select Next Track__
 	MIDI Note 85 (C#5)
@@ -56,8 +60,8 @@ MIDI Commands I'm Using
 * __Play Selected Clip__ 	MIDI Note 43 (G1)
 * __Toggle Selected Clip__ 	MIDI Note 73 (C#4)
 ```
-	MIDI.sendNoteOn(73,127,1);  // Send a Toggle Clip Message
-	MIDI.sendNoteOff(73,0,1);   // Stop Message
+    MIDI.sendNoteOn(73,127,1);  // Send a Toggle Clip Message
+    MIDI.sendNoteOff(73,0,1);   // Stop Message
 ```
 
 * __Select Playing Clip__ 	MIDI Note 50 (D2)
