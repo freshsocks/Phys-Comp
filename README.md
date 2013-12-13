@@ -20,4 +20,4 @@ My final idea is to make a MIDI controller using the Arduino. But not jsut any M
 Contents:
 * __/five-test/__ Testing files for the johnny-five library.
 * __/classwork/__ Classwork.
-* __/final-project/ Code and stuff for my final project.
+* __/final-project/ Code and such things for my final project.
