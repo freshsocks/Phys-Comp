@@ -12,7 +12,8 @@ MIDI Commands I'm Using
 
 #### Track Control
 
-* __Select Track #__ 	MIDI CC 8 (#)
+* __Select Track #__
+	MIDI CC 8 (#)
 ```
 	MIDI.sendControlChange(8, 0, 1); // Select Track 1
 	MIDI.sendControlChange(8, 1, 1); // Select Track 2
@@ -27,21 +28,28 @@ MIDI Commands I'm Using
 	MIDI.sendControlChange(8, 10, 1); // Select Track 11
 	MIDI.sendControlChange(8, 11, 1); // Select Track 12
 ```   
-* __Select Prev Track__ 	MIDI Note 84 (C5)
+* __Select Prev Track__
+	MIDI Note 84 (C5)
 ```
 	MIDI.sendNoteOn(85,127,1);  // Send a Previous Track Message
 	MIDI.sendNoteOff(85,0,1);   // Stop Message
 ```   
-* __Select Next Track__ 	MIDI Note 85 (C#5)
+* __Select Next Track__
+	MIDI Note 85 (C#5)
+* __Stop Current Track__
+	MIDI Note 48 (C2)
+* __Stop All Tracks__
+	MIDI Note 49 (C#2)
 
 #### Scene Control
 
-* __Select Scene #__ 	MIDI CC 2 (#)  
-* __Select Prev Scene__ 	MIDI Note 82 (A#4)
-* __Select Next Scene__ 	MIDI Note 83 (B4)
+* __Select Scene #__
+	MIDI CC 2 (#)  
+* __Select Prev Scene__
+	MIDI Note 82 (A#4)
+* __Select Next Scene__
+	MIDI Note 83 (B4)
 
-* __Stop Current Track__ 	MIDI Note 48 (C2)
-* __Stop All Tracks__ 	MIDI Note 49 (C#2)
 
 #### Clip Control
 
