@@ -60,9 +60,13 @@ MIDI Commands I'm Using
 * __Play Prev Clip__ 	MIDI Note 41 (F1)
   
 __________________________________________________________
-  
-  All MIDI commands tested with OSCulator
-  http://www.osculator.net/download/
-  
-  MIDI Code Values from Selected Track Control Plugin docs
-  http://stc.wiffbi.com/midi-implementation-chart/
+
+All MIDI commands tested with OSCulator
+(http://www.osculator.net/download/)
+
+MIDI Code Values from Selected Track Control Plugin docs
+(http://stc.wiffbi.com/midi-implementation-chart/)
+
+Code for sending MIDI Messages from Arduino MIDI docs
+(http://arduinomidilib.sourceforge.net/a00001.html)
+
